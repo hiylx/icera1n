@@ -1,8 +1,4 @@
 icera1n
 
-this is a WIP wrapper for palera1n, meowbrek and trollstore
-
-todo:
-1. make palera1n wrapper
-2. make meowbrek2 wrapper
-3. trollololololo (trollstore wrapper)
+User-friendly wrapper for palera1n.
+Works on linux (tested on arch btw). This should work on mac.
