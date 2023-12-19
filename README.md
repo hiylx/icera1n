@@ -10,7 +10,10 @@ with futurerestore and tools to enter PwnDFU mode. It makes it
 easy to do these things:
 
 Jailbreak iPhone with Palera1n
+
 Enter PwnDFU mode
+
 Use Futurerestore
+
 
 Note for Linux users: Install usbmuxd with your package manager if not installed. Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
