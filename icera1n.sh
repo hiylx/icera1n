@@ -11,7 +11,6 @@ case "${unameOut}" in
 esac
 
  }
-<<<<<<< HEAD
  function restoreiosnormal {
  	clear
  	echo Either paste the path to the shsh-blob or drag and drop it: 
@@ -46,8 +45,6 @@ esac
  		    2) mainmenu;;
  	esac
  }
-=======
->>>>>>> 267f4adcc985a80f52eeab15ff8a9d934e28bee6
 function select_option {
 
     # little helpers for terminal print control and key input
@@ -105,7 +102,6 @@ function select_option {
 
     return $selected
 }
-<<<<<<< HEAD
 function dfugaster {
 	clear
 	echo Connect your device in DFU mode and hit Enter
@@ -140,8 +136,7 @@ function init_restore {
 	  	    2) mainmenu;;
 	  	esac
 }
-=======
->>>>>>> 267f4adcc985a80f52eeab15ff8a9d934e28bee6
+
 function select_opt {
     select_option "$@" 1>&2
     local result=$?
@@ -155,11 +150,7 @@ function ra1n_control {
 }
 function init_ra1n {
 		clear
-<<<<<<< HEAD
 		case `select_opt "Rootless" "Rootful (Re Jailbreak)" "Rootful First-time setup" "Rootful First-time setup (16GB devices)" "Remove Jailbreak (Rootful)" "Remove Jailbreak (Rootless)" "Back" "Help"` in
-=======
-		case `select_opt "Rootless" "Rootful (Re Jailbreak)" "Rootful First-time setup" "Rootful First-time setup (16GB devices)" "Remove Jailbreak (Rootful)" "Remove Jailbreak (Rootless)" "Back"` in
->>>>>>> 267f4adcc985a80f52eeab15ff8a9d934e28bee6
 	  	    0) clear && echo "Running palera1n rootless" && palera1n & ra1n_control;;
 	  	    1) clear && echo "Running palera1n -f rootful" && palera1n -f & ra1n_control;;
 	  	    2) clear && echo "Running palera1n -fc rootful fakefs creation" && palera1n -fc & ra1n_control;;
@@ -167,17 +158,13 @@ function init_ra1n {
 	  	    4) clear && echo "Running palera1n --force-revert -f Remove rootful" && palera1n --force-revert -f & ra1n_control;;
 	  	    5) clear && echo "Running palera1n --force-revert Remove rootless" && palera1n --force-revert & ra1n_control;;
 	  	    6) mainmenu ;;
-<<<<<<< HEAD
 	  	    7) echo Rootless is better if you have ios 15.7.6 or lower as it is supported by meowbrek2, an untether && echo untether means your phone doesn"'"t need a computer to rejailbreak && read && init_ra1n;;
 	  	esac
 	  	
 }
 
-=======
-	  	esac
 	  	
-}
->>>>>>> 267f4adcc985a80f52eeab15ff8a9d934e28bee6
+
 function mainmenu {
 		clear
 cat << "EOF"
@@ -191,24 +178,12 @@ _________ _______  _______  _______  _______  __    _
 ___) (___| (____/\| (____/\| ) \ \__| )   ( |__) (_| )  \  |
 \_______/(_______/(_______/|/   \__/|/     \|\____/|/    )_)
 ============================================================
-<<<<<<< HEAD
 icera1n v2.0: sail riot
-============================================================
-
 EOF
 		case `select_opt "Palera1n" "Futurerestore" "Exit"` in
 	  	    0) init_ra1n;;
 	  	    1) init_restore;;
-	  	    2) killall usbmuxd palera1n && clear && exit;;
-=======
-icera1n v1.0: dash carbon
-============================================================
-
-EOF
-		case `select_opt "Palera1n" "Exit"` in
-	  	    0) init_ra1n;;
-	  	    1) killall usbmuxd palera1n && clear && echo;;
->>>>>>> 267f4adcc985a80f52eeab15ff8a9d934e28bee6
+	  	    2) killall usbmuxd palera1n && clear && echo;;
 	  	esac
 	  	
 }
