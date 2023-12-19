@@ -1,5 +1,6 @@
 # icera1n
 Version 2.0: sail riot
+
 User-friendly wrapper for palera1n, futurerestore and entering pwndfu mode.
 Works on linux (tested on arch btw). This should work on mac.
 
