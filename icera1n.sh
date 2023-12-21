@@ -39,10 +39,11 @@ esac
  	clear
  	echo If you are restoring normally or with CheckM8 noncesetter choose normal restore.
  	echo If you are using gaster choose gaster.
- 	case `select_opt "Normal Restore" "Gaster Restore" "Back"` in
+ 	case `select_opt "Normal Restore" "Gaster Restore" "Back" "Help"` in
  			0) restoreiosnormal;;
  		    1) restoreiosgaster;;
  		    2) mainmenu;;
+ 		    3) echo Restores on iOS 16 Supported devices are not possible as they have incompatible SEP && read && restoreios
  	esac
  }
 function select_option {
