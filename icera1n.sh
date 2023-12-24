@@ -19,8 +19,8 @@ esac
  	read ipswpath
  	echo Does your device have a baseband? 
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && ./"$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read hi && mainmenu ;;
- 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && ./"$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read hi && mainmenu ;;
+ 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && ./"$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read hi && mainmenu ;;
+ 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && ./"$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read hi && mainmenu ;;
  	esac
  }
  function restoreiosgaster {
@@ -164,7 +164,12 @@ function init_ra1n {
 	  	
 }
 
-	  	
+function idr {
+	echo "Drag 'n drop the ipsw: " 
+	read ipswpath
+	./"$unameOut"/idevicerestore -e $ipswpath
+	
+}	  	
 
 function mainmenu {
 		clear
@@ -181,10 +186,11 @@ ___) (___| (____/\| (____/\| ) \ \__| )   ( |__) (_| )  \  |
 ============================================================
 icera1n v2.0: Sail Riot
 EOF
-		case `select_opt "Palera1n" "Futurerestore" "Exit"` in
+		case `select_opt "Palera1n" "Futurerestore" "Signed Restore"  "Exit"` in
 	  	    0) init_ra1n;;
 	  	    1) init_restore;;
-	  	    2) killall usbmuxd palera1n && clear && echo;;
+	  	    2) idr;;
+	  	    3) killall usbmuxd palera1n && clear && echo;;
 	  	esac
 	  	
 }
