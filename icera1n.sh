@@ -39,11 +39,12 @@ esac
  	clear
  	echo If you are restoring normally or with CheckM8 noncesetter choose normal restore.
  	echo If you are using gaster choose gaster.
- 	case `select_opt "Normal Restore" "Gaster Restore" "Back" "Help"` in
+ 	case `select_opt "Normal Restore" "Gaster Restore" "Back" "Help" "Exit Recovery"` in
  			0) restoreiosnormal;;
  		    1) restoreiosgaster;;
  		    2) mainmenu;;
- 		    3) echo Restores on iOS 16 Supported devices are not possible as they have incompatible SEP && read && restoreios
+ 		    3) echo Restores on iOS 16 Supported devices are not possible as they have incompatible SEP && read && restoreios;;
+ 		    4) ./"$unameOut"/futurerestore --exit-recovery;;
  	esac
  }
 function select_option {
@@ -116,7 +117,7 @@ function m8nonce {
 	echo Connect your device in normal mode. Once the nonce setter gets stuck,
 	echo Put it in DFU mode.
 	case `select_opt "Continue" "Back"` in
-		  	    0) ./"$unameOut"/noncesetter/main.sh && init_restore;;
+		  	    0) cd ./"$unameOut"/noncesetter/ && ./main.sh && init_restore;;
 		  	    1) dfupwn;;
 	esac
 }
