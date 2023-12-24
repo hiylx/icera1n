@@ -44,7 +44,7 @@ esac
  		    1) restoreiosgaster;;
  		    2) mainmenu;;
  		    3) echo Restores on iOS 16 Supported devices are not possible as they have incompatible SEP && read && restoreios;;
- 		    4) ./"$unameOut"/futurerestore --exit-recovery;;
+ 		    4) ./"$unameOut"/futurerestore --exit-recovery && restoreios;;
  	esac
  }
 function select_option {
