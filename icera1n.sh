@@ -186,11 +186,10 @@ ___) (___| (____/\| (____/\| ) \ \__| )   ( |__) (_| )  \  |
 ============================================================
 icera1n v2.0: Sail Riot
 EOF
-		case `select_opt "Palera1n" "Futurerestore" "Signed Restore"  "Exit"` in
+		case `select_opt "Palera1n" "Futurerestore"  "Exit"` in
 	  	    0) init_ra1n;;
 	  	    1) init_restore;;
-	  	    2) idr;;
-	  	    3) killall usbmuxd palera1n && clear && echo;;
+	  	    2) killall usbmuxd palera1n && clear && echo;;
 	  	esac
 	  	
 }
