@@ -117,7 +117,7 @@ function m8nonce {
 	echo Connect your device in normal mode. Once the nonce setter gets stuck,
 	echo Put it in DFU mode.
 	case `select_opt "Continue" "Back"` in
-		  	    0) cd ./"$unameOut"/noncesetter/ && ./main.sh && init_restore;;
+		  	    0) cd ./"$unameOut"/noncesetter/ && ./main.sh && cd ../../ && init_restore;;
 		  	    1) dfupwn;;
 	esac
 }
