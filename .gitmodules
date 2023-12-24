@@ -1,0 +1,6 @@
+[submodule "Darwin/noncesetter"]
+	path = Darwin/noncesetter
+	url = https://github.com/MatthewPierson/checkm8-nonce-setter
+[submodule "Linux/noncesetter"]
+	path = Linux/noncesetter
+	url = https://github.com/0xallie/checkm8-nonce-setter-linux
