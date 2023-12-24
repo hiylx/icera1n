@@ -24,3 +24,5 @@ It needs less command line knowledge and makes it more easy to understand for ne
 
 
 Note for Linux users: Install usbmuxd with your package manager if not installed. Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
+
+Planned support for trollstore and meowbrek
