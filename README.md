@@ -1,5 +1,5 @@
 # icera1n
-# ARCHIVED: I have traded in my iphone 7 to get a discount off of a Samsung S21 FE, I have no devices to test this on.
+# Back from the dead (kinda...)
 Version 2.1: KFD Chicken
 
 Install Steps (needs git cli installed):
