@@ -153,12 +153,12 @@ function ra1n_control {
 function init_ra1n {
 		clear
 		case `select_opt "Rootless" "Rootful (Re Jailbreak)" "Rootful First-time setup" "Rootful First-time setup (16GB devices)" "Remove Jailbreak (Rootful)" "Remove Jailbreak (Rootless)" "Back" "Help"` in
-	  	    0) clear && echo "Running palera1n rootless" && palera1n -l & ra1n_control;;
+	  	    0) clear && echo "Running palera1n -l rootless" && palera1n -l & ra1n_control;;
 	  	    1) clear && echo "Running palera1n -f rootful" && palera1n -f & ra1n_control;;
 	  	    2) clear && echo "Running palera1n -fc rootful fakefs creation" && palera1n -fc & ra1n_control;;
 	  	    3) clear && echo "Running palera1n -Bf rootful fakefs bind mount creation" && palera1n -Bf & ra1n_control;;
 	  	    4) clear && echo "Running palera1n --force-revert -f Remove rootful" && palera1n --force-revert -f & ra1n_control;;
-	  	    5) clear && echo "Running palera1n --force-revert Remove rootless" && palera1n --force-revert -l & ra1n_control;;
+	  	    5) clear && echo "Running palera1n --force-revert -l Remove rootless" && palera1n --force-revert -l & ra1n_control;;
 	  	    6) mainmenu ;;
 	  	    7) echo Only use palera1n if your device is not supported by Dopamine jailbreak && read && init_ra1n;;
 	  	esac
@@ -185,7 +185,7 @@ _________ _______  _______  _______  _______  __    _
 ___) (___| (____/\| (____/\| ) \ \__| )   ( |__) (_| )  \  |
 \_______/(_______/(_______/|/   \__/|/     \|\____/|/    )_)
 ============================================================
-icera1n v2.0: Sail Riot
+icera1n v2.0: KFD Chicken
 EOF
 		case `select_opt "Palera1n" "Futurerestore"  "Exit"` in
 	  	    0) init_ra1n;;
