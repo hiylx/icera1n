@@ -6,7 +6,7 @@ Install Steps (needs git cli installed):
 <code> git clone https://github.com/hiylx/icera1n --recursive </code>
 To run:
 cd into the directory where icera1n is installed
-then run <./icera1n.sh>
+then run <code>./icera1n.sh</code>
 if you dont know what the <code>cd</code> command is palera1n is not for you...
 
 User-friendly wrapper for palera1n, futurerestore and entering pwndfu mode.
