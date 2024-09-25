@@ -2,7 +2,7 @@
 # Back from the dead (kinda...)
 Version 2.1: KFD Chicken
 
-(oh yeah also install usbmuxd and libimobiledevice if you use linux)
+(oh yeah also install usbmuxd and libimobiledevice and imobiledeviceutils if you use linux)
 
 Install Steps (needs git cli installed):
 <code> git clone https://github.com/hiylx/icera1n --recursive </code>
