@@ -1,4 +1,4 @@
-#Setting Nonce via dimentio
+# Setting Nonce via dimentio
 
 - Step 1. Install your favorite jailbreak. Also remember what you set as the root password
 - Step 2. Add the source "https://repo.1conan.com/" to your package manager
