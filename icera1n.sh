@@ -2,7 +2,7 @@
 function kerncheck {
 unameOut="$(uname -s)"
 case "${unameOut}" in
-    Linux*)     sudo systemctl stop usbmuxd && usbmuxd -f -p &;;
+    Linux*)     sudo systemctl stop usbmuxd && usbmuxd -f -p >> /dev/null &;;
     Darwin*)    machine=Mac;;
     CYGWIN*)    machine=Cygwin;;
     MINGW*)     machine=MinGw;;
@@ -31,8 +31,8 @@ esac
  	read ipswpath
  	echo Does your device have a baseband? 
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && ./"$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
- 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && ./"$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
+ 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && ./"$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
+ 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && ./"$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
  	esac
  } 
  function restoreios {
@@ -127,7 +127,7 @@ function dfupwn {
 	  	    0) m8nonce;;
 	  	    1) dfugaster;;
 	  	    2) init_restore;;
-	  	    3) echo CheckM8 Nonce Setter is better than Gaster as it works better with futurerestore. && echo Even if a guide you are following says to use gaster you can use CheckM8 instead && echo as they serve the same purpose. && read && dfupwn;;
+	  	    3) echo CheckM8 Nonce Setter is better than Gaster as it works better with futurerestore. && echo Even if a guide you are following says to use gaster you can use CheckM8 instead && echo as they serve the same purpose. && echo If neither does not work check Guides/dimentio.md && read && dfupwn;;
 	  	esac	
 }
 function init_restore {
@@ -145,20 +145,16 @@ function select_opt {
     echo $result
     return $result
 }
-function ra1n_control {
-		case `select_opt "Kill Palera1n" ` in
-	  	    0) killall palera1n && mainmenu;;
-	  	esac
-}
+
 function init_ra1n {
 		clear
 		case `select_opt "Rootless" "Rootful (Re Jailbreak)" "Rootful First-time setup" "Rootful First-time setup (16GB devices)" "Remove Jailbreak (Rootful)" "Remove Jailbreak (Rootless)" "Back" "Help"` in
-	  	    0) clear && echo "Running palera1n -l rootless" && palera1n -l & ra1n_control;;
-	  	    1) clear && echo "Running palera1n -f rootful" && palera1n -f & ra1n_control;;
-	  	    2) clear && echo "Running palera1n -fc rootful fakefs creation" && palera1n -fc & ra1n_control;;
-	  	    3) clear && echo "Running palera1n -Bf rootful fakefs bind mount creation" && palera1n -Bf & ra1n_control;;
-	  	    4) clear && echo "Running palera1n --force-revert -f Remove rootful" && palera1n --force-revert -f & ra1n_control;;
-	  	    5) clear && echo "Running palera1n --force-revert -l Remove rootless" && palera1n --force-revert -l & ra1n_control;;
+	  	    0) clear && echo "Running palera1n -l rootless" && palera1n -l && mainmenu;
+	  	    1) clear && echo "Running palera1n -f rootful" && palera1n -f && mainmenu;;
+	  	    2) clear && echo "Running palera1n -fc rootful fakefs creation" && palera1n -fc && mainmenu;;
+	  	    3) clear && echo "Running palera1n -Bf rootful fakefs bind mount creation" && palera1n -Bf && mainmenu;;
+	  	    4) clear && echo "Running palera1n --force-revert -f Remove rootful" && palera1n --force-revert -f && mainmenu;;
+	  	    5) clear && echo "Running palera1n --force-revert -l Remove rootless" && palera1n --force-revert -l && mainmenu;;
 	  	    6) mainmenu ;;
 	  	    7) echo Only use palera1n if your device is not supported by Dopamine jailbreak && read && init_ra1n;;
 	  	esac
@@ -190,7 +186,7 @@ EOF
 		case `select_opt "Palera1n" "Futurerestore"  "Exit"` in
 	  	    0) init_ra1n;;
 	  	    1) init_restore;;
-	  	    2) killall usbmuxd palera1n && clear && echo;;
+	  	    2) killall usbmuxd && clear && echo && exit;;
 	  	esac
 	  	
 }
@@ -204,6 +200,7 @@ if [ "$EUID" -ne 0 ]
   	mainmenu
   	)
   else sudo sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
+  	mainmenu
   	fi
   )
 fi
