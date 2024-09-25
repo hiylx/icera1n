@@ -29,7 +29,7 @@ Enter PwnDFU mode
 Use Futurerestore
 Activate devices restored to iOS 15 on iOS 16 SEP
 
-Check out the [Guides](https://github.com/hiylx/icera1n/Guides/)
+Check out the [Guides](https://github.com/hiylx/icera1n/tree/main/Guides/)
 
 Note for Linux users: Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
 
