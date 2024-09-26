@@ -42,3 +42,5 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
  - Step 12.1 When it installs sileo it will ask you to set the root password. Set it to something you can remember
  - You are now jailbroken. To rejailbreak just follow steps 1,2, 7 and 8
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootful)
+
+If palera1n does not work you should try palen1x. The guide is coming soon (TM)
