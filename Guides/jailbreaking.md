@@ -43,4 +43,4 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
  - You are now jailbroken. To rejailbreak just follow steps 1,2, 7 and 8
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootful)
 
-If palera1n does not work you should try palen1x. The guide is coming soon (TM)
+If palera1n does not work you its probably the usb cable try another one
