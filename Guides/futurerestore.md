@@ -29,5 +29,6 @@ Now you will have to set the nonce on your device.
 
  # Method 3. Dimentio (Neither method works)
  - Step 1. Restart your device into normal mode and try [this](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
- - Step 2. Choose run futurerestore
- - Step 3. Choose normal restore and follow the instructions.
+ - Step 2. Restart your device into recovery mode
+ - Step 3. Choose run futurerestore
+ - Step 4. Choose normal restore and follow the instructions.
