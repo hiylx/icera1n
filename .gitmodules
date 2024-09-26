@@ -4,3 +4,6 @@
 [submodule "eclipsera1n"]
 	path = eclipsera1n
 	url = https://github.com/hiylx/eclipsera1n.git
+[submodule "noncesetter"]
+	path = Darwin/noncesetter
+	url = https://github.com/hiylx/checkm8-nonce-setter.git
