@@ -4,6 +4,6 @@
 [submodule "noncesetterlinux"]
 	path = Linux/noncesetter
 	url = https://github.com/hiylx/checkm8-nonce-setter-linux.git
-[submodule "Darwin/noncesetter"]
+[submodule "noncesetter"]
 	path = Darwin/noncesetter
 	url = https://github.com/hiylx/checkm8-nonce-setter.git
