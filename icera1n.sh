@@ -18,7 +18,7 @@ find . -name "*.sh" -exec chmod +x {} \;
  	read pathsh22
  	echo Either paste the path to the ipsw or drag and drop it:
  	read ipswpath
- 	echo Does your device have a baseband? 
+ 	echo Does your device have a baseband? Only devices which have a SIM slot have baseband
  	case `select_opt "Yes" "No"` in
  	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
  	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
@@ -30,7 +30,7 @@ find . -name "*.sh" -exec chmod +x {} \;
  	read pathsh22
  	echo Either paste the path to the ipsw or drag and drop it:
  	read ipswpath
- 	echo Does your device have a baseband? 
+ 	echo Does your device have a baseband? Only devices which have a SIM slot have baseband
  	case `select_opt "Yes" "No"` in
  	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
  	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
@@ -117,7 +117,7 @@ function m8nonce {
 	clear
 	echo Connect your device in DFU mode and hit enter
 	case `select_opt "Continue" "Back"` in
-		  	    0) cd "$currentdirwd/""$unameOut"/noncesetter/ && "$currentdirwd/"main.sh && cd "$currentdirwd/" && init_restore;;
+		  	    0) cd "$currentdirwd/""$unameOut"/noncesetter/ && "$currentdirwd/"main.sh && cd "$currentdirwd/" && echo Complete && read && init_restore;;
 		  	    1) dfupwn;;
 	esac
 }
@@ -127,7 +127,7 @@ function dfupwn {
 	  	    0) m8nonce;;
 	  	    1) dfugaster;;
 	  	    2) init_restore;;
-	  	    3) echo CheckM8 Nonce Setter is better than Gaster as it works better with futurerestore. && echo Even if a guide you are following says to use gaster you can use CheckM8 instead && echo as they serve the same purpose. && echo If neither does not work check Guides/dimentio.md && read && dfupwn;;
+	  	    3) echo CheckM8 Nonce Setter is better than Gaster as it works better with futurerestore. && echo If neither does not work check Guides/dimentio.md && read && dfupwn;;
 	  	esac	
 }
 function init_restore {

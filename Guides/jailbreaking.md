@@ -3,7 +3,15 @@
 If your device supports Dopamine, you should use that over this, unless you are 
 following my activation guide.
 
-# Method 1. Rootless (Reccomended)
+Disclaimer:
+
+On A11 devices, you must disable your passcode and will not be able to use your passcode, or other SEP functionality, until you boot into a stock iOS state. SEP functionality includes things such as a passcode, Face ID/Touch ID, and Apple Pay.
+
+Additionally, if your device is an A11 device on iOS 16 and you've set a passcode before, you will need to erase all content and settings in order to be able to jailbreak.
+
+[Source for the Disclaimer](https://ios.cfw.guide/installing-palera1n/)
+
+# Method 1. Rootless (Recommended)
 
  - Step 1. Open icera1n
  - Step 2. Connect your device 
@@ -15,13 +23,14 @@ following my activation guide.
  - Step 8. Choose Sileo
  - Step 8.1 When it installs sileo it will ask you to set the root password. Set it to something you can remember
  - You are now jailbroken. To rejailbreak just follow steps 1 to 5
+ - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootless)
 
  # Method 2. Rootful (Advanced)
 
  - Step 1. Open icera1n
  - Step 2. Connect your device 
  - Step 3. Choose palera1n
- - Step 4. Choose palera1n rootful (first time setup)
+ - Step 4. Choose palera1n rootful (first time setup)  (if you either have a 16 GB device or have less than 15GB free you can choose the 16GB devices option if you are on iOS 15. The 16GB option needs like 3 or 4 GB free)
  - Step 5. Let it do its thing
  - Step 6. Your device should eventually boot into recovery mode
  - Step 7. Choose palera1n
@@ -31,4 +40,5 @@ following my activation guide.
  - Step 11. Open palera1n app
  - Step 12. Choose Sileo
  - Step 12.1 When it installs sileo it will ask you to set the root password. Set it to something you can remember
- - You are now jailbroken. To rejailbreak just follow steps 1, 7 and 8
+ - You are now jailbroken. To rejailbreak just follow steps 1,2, 7 and 8
+ - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootful)
