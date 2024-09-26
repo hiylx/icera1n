@@ -4,3 +4,6 @@
 [submodule "Linux/noncesetter"]
 	path = Linux/noncesetter
 	url = https://github.com/0xallie/checkm8-nonce-setter-linux
+[submodule "eclipsera1n"]
+	path = eclipsera1n
+	url = https://github.com/hiylx/eclipsera1n.git
