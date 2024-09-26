@@ -2,7 +2,7 @@
 
 Version 3: Eclipse (WIP)
 
-(oh yeah also install usbmuxd and libimobiledevice and imobiledeviceutils if you use linux)
+(oh yeah also install usbmuxd, unzip, libimobiledevice and imobiledeviceutils if you use linux)
 
 Install Steps (needs git cli installed):
 
@@ -32,4 +32,4 @@ Activate devices restored to iOS 15 on iOS 16 SEP
 Check out the [Guides](https://github.com/hiylx/icera1n/tree/main/Guides/)
 
 Note for Linux users: Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
-
+Note: Do not use a USB-C to Lightning cable, those do not work very well for this.

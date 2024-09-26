@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-script_path="$(cd "$(dirname "$0")" && pwd)"
+currentdirwd="$(cd "$(dirname "$0")" && pwd)"
 function kerncheck {
 unameOut="$(uname -s)"
 case "${unameOut}" in
-    Linux*)     sudo systemctl stop usbmuxd && usbmuxd -f -p >> /dev/null &;;
+    Linux*)     systemctl stop usbmuxd && usbmuxd -f -p &> /dev/null&;;
     Darwin*)    machine=Mac;;
     CYGWIN*)    machine=Cygwin;;
     MINGW*)     machine=MinGw;;
     MSYS_NT*)   machine=Git;;
     *)          machine="UNKNOWN:${unameOut}"
 esac
-
+find . -name "*.sh" -exec chmod +x {} \;
  }
  function restoreiosnormal {
  	clear
@@ -20,8 +20,8 @@ esac
  	read ipswpath
  	echo Does your device have a baseband? 
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$script_path/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
- 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$script_path/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
+ 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
+ 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
  	esac
  }
  function restoreiosgaster {
@@ -32,8 +32,8 @@ esac
  	read ipswpath
  	echo Does your device have a baseband? 
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$script_path/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
- 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$script_path/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
+ 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
+ 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
  	esac
  } 
  function restoreios {
@@ -44,8 +44,8 @@ esac
  			0) restoreiosnormal;;
  		    1) restoreiosgaster;;
  		    2) mainmenu;;
- 		    3) echo Restores on iOS 16 Supported devices are not possible as they have incompatible SEP && read && restoreios;;
- 		    4) "$script_path/""$unameOut"/futurerestore --exit-recovery && restoreios;;
+ 		    3) clear && echo Restores on devices which support ios 16 or 17 need you to follow the Guide in my repo && read && restoreios;;
+ 		    4) "$currentdirwd/""$unameOut"/futurerestore --exit-recovery && restoreios;;
  	esac
  }
 function select_option {
@@ -109,16 +109,15 @@ function dfugaster {
 	clear
 	echo Connect your device in DFU mode and hit Enter
 	case `select_opt "Continue" "Back"` in
-			  	    0) "$script_path/""$unameOut"/gaster pwn && "$script_path/""$unameOut"/gaster reset && init_restore;;
+			  	    0) "$currentdirwd/""$unameOut"/gaster pwn && "$currentdirwd/""$unameOut"/gaster reset && init_restore;;
 			  	    1) dfupwn;;
 	esac
 }
 function m8nonce {
 	clear
-	echo Connect your device in normal mode. Once the nonce setter gets stuck,
-	echo Put it in DFU mode.
+	echo Connect your device in DFU mode and hit enter
 	case `select_opt "Continue" "Back"` in
-		  	    0) cd "$script_path/""$unameOut"/noncesetter/ && "$script_path/"main.sh && cd ."$script_path/"."$script_path/" && init_restore;;
+		  	    0) cd "$currentdirwd/""$unameOut"/noncesetter/ && "$currentdirwd/"main.sh && cd "$currentdirwd/" && init_restore;;
 		  	    1) dfupwn;;
 	esac
 }
@@ -149,8 +148,8 @@ function select_opt {
 
 function init_ra1n {
 		clear
-		case `select_opt "Rootless" "Rootful (Re Jailbreak)" "Rootful First-time setup" "Rootful First-time setup (16GB devices)" "Remove Jailbreak (Rootful)" "Remove Jailbreak (Rootless)" "Back" "Help"` in
-	  	    0) clear && echo "Running palera1n -l rootless" && palera1n -l && mainmenu;
+		case `select_opt "palera1n rootless" "palera1n rootful (rejailbreak)" "palera1n rootful (first time setup)" "palera1n rootful (first time setup for 16GB devices)" "palera1n remove jailbreak (rootful)" "palera1n remove jailbreak (rootless)" "Back" "Help"` in
+	  	    0) clear && echo "Running palera1n -l rootless" && palera1n -l && mainmenu;;
 	  	    1) clear && echo "Running palera1n -f rootful" && palera1n -f && mainmenu;;
 	  	    2) clear && echo "Running palera1n -fc rootful fakefs creation" && palera1n -fc && mainmenu;;
 	  	    3) clear && echo "Running palera1n -Bf rootful fakefs bind mount creation" && palera1n -Bf && mainmenu;;
@@ -162,27 +161,40 @@ function init_ra1n {
 	  	
 }
 
-function idr {
-	echo "Drag 'n drop the ipsw: " 
-	read ipswpath
-	"$script_path/""$unameOut"/idevicerestore -e $ipswpath
-	
-}	  	
-
 function trololo {
-	cd "$script_path/"SSHRD_Script/
-	echo Enter your iOS version (Make sure you have Tips installed, iOS16+ does not work on Linux):
+	cd "$currentdirwd/"eclipsera1n/SSHRD_Script/
+	clear
+	echo "Enter your iOS version (Make sure you have Tips installed on your iDevice, iOS16+ does not work on Linux):"
 	read iosver
 	./sshrd.sh $iosver
 	./sshrd.sh $iosver TrollStore Tips 
 	echo Trollstore is installed, reboot and enjoy!
 	read
-	cd $script_path/
+	cd "$currentdirwd/"
+	mainmenu
+}
+function activationhecker {
+	clear
+	case `select_opt "Backup activation files" "Activate Device" "Back"` in
+		0) bkpactiv;;
+		1) doactivation;;
+		2) mainmenu;;
+	esac
+
+}
+
+function doactivation {
+	cd "$currentdirwd/"eclipsera1n/
+	clear
+	./activate.sh
+	read
+	cd "$currentdirwd/"
 	mainmenu
 }
 
 function mainmenu {
 		clear
+		
 cat << "EOF"
 ============================================================
 _________ _______  _______  _______  _______  __    _       
@@ -194,7 +206,7 @@ _________ _______  _______  _______  _______  __    _
 ___) (___| (____/\| (____/\| ) \ \__| )   ( |__) (_| )  \  |
 \_______/(_______/(_______/|/   \__/|/     \|\____/|/    )_)
 ============================================================
-icera1n v2.0: KFD Chicken
+icera1n v3.0: eclipse
 EOF
 		case `select_opt "Palera1n" "Futurerestore" "TrollStore" "Activation" "Exit"` in
 	  	    0) init_ra1n;;
