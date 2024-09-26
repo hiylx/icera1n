@@ -29,7 +29,7 @@ Enter PwnDFU mode
 Use Futurerestore
 Activate devices restored to iOS 15 on iOS 16 SEP
 
-Check out the [Guides](https://github.com/hiylx/icera1n/tree/main/Guides/)
+Check out [Getting Started](https://github.com/hiylx/icera1n/blob/main/Guides/getstarted.md)
 
 Note for Linux users: Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
 Note: Do not use a USB-C to Lightning cable, those do not work very well for this.

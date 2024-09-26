@@ -168,7 +168,7 @@ function trololo {
 	read iosver
 	./sshrd.sh $iosver
 	./sshrd.sh $iosver TrollStore Tips 
-	echo Trollstore is installed, reboot and enjoy!
+	echo Trollstore is installed,force reboot and enjoy!
 	read
 	cd "$currentdirwd/"
 	mainmenu
@@ -219,7 +219,7 @@ EOF
 }
 
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Run sudo ./icera1n.sh"
   else(
   if [ -e /usr/local/bin/palera1n ]
   then (
