@@ -10,7 +10,7 @@
 
 # Backing up activation files
  - Step 1. Remove all previous jailbreaks
- - Step 2. Follow the rootful palera1n guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md)
+ - Step 2. Follow the rootful palera1n guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md). I don't know if the 16GB mode will work properly.
  - Step 3. Install openssh package on your device using sileo
  - Step 4. Open icera1n
  - Step 5. Choose activation
