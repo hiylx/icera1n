@@ -13,7 +13,7 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
 # Method 1. Rootless (Recommended)
 
  - Step 1. Open icera1n
- - Step 2. Connect your device 
+ - Step 2. Connect your device in DFU mode
  - Step 3. Choose palera1n
  - Step 4. Choose palera1n rootless
  - Step 5. Let it do its thing
@@ -28,7 +28,7 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
  # Method 2. Rootful (Advanced)
 
  - Step 1. Open icera1n
- - Step 2. Connect your device 
+ - Step 2. Connect your device in DFU mode
  - Step 3. Choose palera1n
  - Step 4. Choose palera1n rootful (first time setup)  (if you either have a 16 GB device or have less than 15GB free you can choose the 16GB devices option if you are on iOS 15. The 16GB option needs like 3 or 4 GB free)
  - Step 5. Let it do its thing
