@@ -173,9 +173,18 @@ function trololo {
 	cd "$currentdirwd/"
 	mainmenu
 }
+function bkpactiv {
+	cd "$currentdirwd/"eclipsera1n/
+	clear
+	./backup.sh
+	echo "Press enter to return"
+	read
+	cd "$currentdirwd/"
+	mainmenu
+}
 function activationhecker {
 	clear
-	case `select_opt "Backup activation files" "Activate Device" "Back"` in
+	case `select_opt "Backup activation files" "Activate device using backup" "Back"` in
 		0) bkpactiv;;
 		1) doactivation;;
 		2) mainmenu;;
@@ -187,6 +196,7 @@ function doactivation {
 	cd "$currentdirwd/"eclipsera1n/
 	clear
 	./activate.sh
+	echo "Press enter to return"
 	read
 	cd "$currentdirwd/"
 	mainmenu
