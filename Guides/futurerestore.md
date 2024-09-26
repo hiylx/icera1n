@@ -2,7 +2,7 @@
 # 
 
 # WARNING WARNING WARNING!
-# FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading a device which supports iOS 16 / 17 to 15 follow [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/activation.md) or it won't work unless you are coming here after following that guide. If your device supports iOS 18 you can't downgrade it as of now.
+FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading a device which supports iOS 16 / 17 to 15 follow [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/activation.md) or it won't work unless you are coming here after following that guide. If your device supports iOS 18 or iPhone X you can't downgrade it as of now.
 
 - # Prerequisites
 - iPSW file you want to downgrade to
