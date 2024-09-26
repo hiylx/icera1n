@@ -2,7 +2,7 @@
 
 You can use icera1n to jailbreak, futurerestore with blobs, install trollstore or activate an iphone.
 
-Before you start you should read the readme file and install any dependancies if you are on linux
+Before you start you should read the readme file and install any dependencies if you are on linux
 
  - [Jailbreaking](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md)
  - [Futurerestore](https://github.com/hiylx/icera1n/blob/main/Guides/futurerestore.md)
