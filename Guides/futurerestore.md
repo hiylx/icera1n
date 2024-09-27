@@ -13,22 +13,23 @@ FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading 
 
 Now you will have to set the nonce on your device.
 
-# Method 1. Checkm8 Nonce Setter (Recommended)
+
+ # Method 1. Dimentio (Recommended)
+ - Step 1. Restart your device into normal mode and try [this](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
+ - Step 2. Restart your device into recovery mode
+ - Step 3. Choose run futurerestore
+ - Step 4. Choose normal restore and follow the instructions
+
+# Method 2. Checkm8 Nonce Setter
  - Step 1. Choose PWNDFU
  - Step 2. Choose checkm8 nonce setter and follow the isntructions
  - Step 2.1. If it ends with an error then try Method 2
  - Step 3. Once it is done, choose run futurerestore
  - Step 4. Choose normal restore and follow the instructions
 
- # Method 2. Gaster
+ # Method 3. Gaster
  - Step 1. Choose PWNDFU
  - Step 2. Choose gaster and follow the instructions
  - Step 3. Once it is done, choose run futurerestore
  - Step 4. Choose gaster restore and follow the instructions
  - Step 4.1. If it gives an error then try Method 1
-
- # Method 3. Dimentio (Neither method works)
- - Step 1. Restart your device into normal mode and try [this](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
- - Step 2. Restart your device into recovery mode
- - Step 3. Choose run futurerestore
- - Step 4. Choose normal restore and follow the instructions
