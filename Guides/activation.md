@@ -4,13 +4,14 @@
  - Also touch ID will not work
  - And I don't recommend setting a password if you do and something goes wrong it's on you
  - You can't use this to bypass iCloud lock, like it literally won't work
+ - This guide is incomplete like wait 2, 3 days for me to complete it cause I have a life too...
 # Prerequisites
  - An iDevice on iOS 16 / 17 that is activated
  - Blobs and iPSW for the iOS 15 version you are downgrading to
 
 # Backing up activation files
  - Step 1. Remove all previous jailbreaks
- - Step 2. Follow the rootful palera1n guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md). I don't know if the 16GB mode will work properly.
+ - Step 2. Follow the rootless palera1n guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md).
  - Step 3. Install openssh package on your device using sileo
  - Step 4. Open icera1n
  - Step 5. Choose activation
