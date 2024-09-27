@@ -8,7 +8,7 @@ FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading 
 - iPSW file you want to downgrade to
 - SHSH Blobs for the version of iOS in the iPSW file
 
-# Prerequisite Steps
+# DO THIS FIRST
 
 - **Step 1.** Open icera1n
 - **Step 2.** Connect your device to your comptuer
