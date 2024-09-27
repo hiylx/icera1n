@@ -168,7 +168,7 @@ function trololo {
 	read iosver
 	#./sshrd.sh $iosver
 	./sshrd.sh $iosver TrollStore Tips 
-	./sshrd.sh $iosver boot
+	./sshrd.sh boot
 	echo Your device should automatically reboot in around a minute. Open Tips app and choose Install Trollstore
 	read
 	cd "$currentdirwd/"
