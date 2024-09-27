@@ -12,7 +12,7 @@
 # Backing up activation files
  - **Step 1.** Remove all previous jailbreaks
  - **Step 2.** Follow the rootless palera1n guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md).
- - **Step 3.** Install openssh package on your device using sileo
+ - **Step 3.** Install openssh package on your device using Sileo
  - **Step 4.** Open icera1n
  - **Step 5.** Choose activation
  - **Step 6.** Choose backup activation files and follow the instructions
