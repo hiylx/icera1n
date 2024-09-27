@@ -23,7 +23,7 @@ This jailbreak only supports devices on iOS 15, 16 and 17 which have an A11 chip
  - Step 7. Open palera1n app
  - Step 8. Choose Sileo
  - Step 8.1 When it installs Sileo it will ask you to set the terminal password. Set it to something you can remember
- - Step 8.2 once it is installed open Sileo choose packages and choose "Upgrade all"
+ - Step 8.2 Once it is installed open Sileo choose packages and choose "Upgrade all"
  - You are now jailbroken. To rejailbreak just follow steps 1 to 5
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootless)
 
@@ -42,7 +42,7 @@ This jailbreak only supports devices on iOS 15, 16 and 17 which have an A11 chip
  - Step 11. Open palera1n app
  - Step 12. Choose Sileo
  - Step 12.1 When it installs Sileo it will ask you to set the root password. Set it to something you can remember
- - Step 12.2 once it is installed open Sileo choose packages and choose "Upgrade all"
+ - Step 12.2 Once it is installed open Sileo choose packages and choose "Upgrade all"
  - You are now jailbroken. To rejailbreak just follow steps 1,2, 7 and 8
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootful)
 
