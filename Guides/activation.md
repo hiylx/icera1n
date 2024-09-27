@@ -28,4 +28,4 @@
  - **Step 3.** Choose Activation
  - **Step 4.** Choose Activate device using backup
  - **Step 5.** Success! If there is any issue create a github issue
- - **Step 5.1** If you want to sideload apps you will have to use the trollstore guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/trolstore.md) or else it wont work. Since your device is not activated in the standard way sideloading apps using safari, sideloadly or altstore won't work so you are forced to use the ramdisk version of trollstore.
+ - **Step 5.1** If you want to sideload apps you will have to use the trollstore guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/trolLstore.md) or else it wont work. Since your device is not activated in the standard way sideloading apps using safari, sideloadly or altstore won't work so you are forced to use the ramdisk version of trollstore.
