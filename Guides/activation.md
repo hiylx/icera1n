@@ -2,7 +2,7 @@
 # DISCLAIMER THIS GUIDE IS INCOMPLETE WAIT 4 DAYS FOR ME TO COMPLETE IT AND TEST IT AND ALL
  - This will ERASE everything on your device
  - Also touch ID will not work
- - And I don't recommend setting a password on A11 chip devices
+ - And I don't recommend setting a password on A11 chip devices if you are planning on using palera1n
  - You can't use this to bypass iCloud lock, like it literally won't work
  - This guide was only tested on iOS 16 supporting device. It should (hopefully) work on 17 and 18. If you try this on a device supporting iOS 17 or 18 you should be prepared if you need to restore back to the latest version
  - This guide only works on checkm8 compatible devices. The explicit list is iPad 5, 6 and 7, iPad Pro 12.9" 1st and 2nd generation, iPad Pro 10.5" 1st generation and iPad 9.7" 1st Generation and iPhone 8. DO NOT TRY THIS WITH AN IPHONE X
