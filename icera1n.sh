@@ -166,9 +166,10 @@ function trololo {
 	clear
 	echo "Enter your iOS version (Make sure you have Tips installed on your iDevice, iOS16+ does not work on Linux):"
 	read iosver
-	./sshrd.sh $iosver
+	#./sshrd.sh $iosver
 	./sshrd.sh $iosver TrollStore Tips 
-	echo Trollstore is installed,force reboot and enjoy!
+	./sshrd.sh $iosver boot
+	echo Your device should automatically reboot. Trollstore is installed
 	read
 	cd "$currentdirwd/"
 	mainmenu
