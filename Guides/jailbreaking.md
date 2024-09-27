@@ -19,7 +19,7 @@ This jailbreak only supports devices on iOS 15, 16 and 17 which have an A11 chip
  - **Step 3.** Choose palera1n
  - **Step 4.** Choose palera1n rootless
  - **Step 5.** Let it do its thing
- - **Step 5.1** If your device has an a9 chip it might hang on the line Booting PongoOS. To fix this, press Ctrl + C then repeat steps 1, 3 and 4
+ - **Step 5.1** If your device has an a9x chip or older it might hang on the line Booting PongoOS. To fix this, press Ctrl + C then repeat steps 1, 3 and 4
  - **Step 6.** Once your device boots,unlock it
  - **Step 7.** Open palera1n app
  - **Step 8.** Choose Sileo
@@ -35,7 +35,7 @@ This jailbreak only supports devices on iOS 15, 16 and 17 which have an A11 chip
  - **Step 3.** Choose palera1n
  - **Step 4.** Choose palera1n rootful (first time setup)  (if you either have a 16 GB device or have less than 15GB free you can choose the 16GB devices option if you are on iOS 15. The 16GB option needs like 3 or 4 GB free)
  - **Step 5.** Let it do its thing
- - **Step 5.1** If your device has an a9 chip it might hang on the line Booting PongoOS. To fix this, press Ctrl + C then repeat steps 1, 3 and 4
+ - **Step 5.1** If your device has an a9x chip or older it might hang on the line Booting PongoOS. To fix this, press Ctrl + C then repeat steps 1, 3 and 4
  - **Step 6.** Your device should eventually boot into recovery mode
  - **Step 7.** Choose palera1n
  - **Step 8.** Choose palera1n rootful (rejailbreak)
