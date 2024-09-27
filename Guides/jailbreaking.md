@@ -8,6 +8,8 @@ On A11 devices, you must disable your passcode and will not be able to use your 
 
 Additionally, if your device is an A11 device on iOS 16 and you've set a passcode before, you will need to erase all content and settings in order to be able to jailbreak.
 
+This jailbreak only supports devices on iOS 15, 16 and 17 which have an A11 chip or lower
+
 [Source for the Disclaimer](https://ios.cfw.guide/installing-palera1n/)
 
 # Method 1. Rootless (Recommended)
@@ -20,8 +22,8 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
  - Step 6. Once your device boots,unlock it
  - Step 7. Open palera1n app
  - Step 8. Choose Sileo
- - Step 8.1 When it installs sileo it will ask you to set the terminal password. Set it to something you can remember
- - Step 8.2 once it is installed open sileo choose packages and choose "Upgrade all"
+ - Step 8.1 When it installs Sileo it will ask you to set the terminal password. Set it to something you can remember
+ - Step 8.2 once it is installed open Sileo choose packages and choose "Upgrade all"
  - You are now jailbroken. To rejailbreak just follow steps 1 to 5
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootless)
 
@@ -39,8 +41,8 @@ Additionally, if your device is an A11 device on iOS 16 and you've set a passcod
  - Step 10. Once your device boots,unlock it
  - Step 11. Open palera1n app
  - Step 12. Choose Sileo
- - Step 12.1 When it installs sileo it will ask you to set the root password. Set it to something you can remember
- - Step 12.2 once it is installed open sileo choose packages and choose "Upgrade all"
+ - Step 12.1 When it installs Sileo it will ask you to set the root password. Set it to something you can remember
+ - Step 12.2 once it is installed open Sileo choose packages and choose "Upgrade all"
  - You are now jailbroken. To rejailbreak just follow steps 1,2, 7 and 8
  - To remove you can follow steps 1 to 3 then choose palera1n remove jailbreak (rootful)
 
