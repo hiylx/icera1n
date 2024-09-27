@@ -5,3 +5,4 @@
 - **Step 1.** Open icera1n
 - **Step 2.** Put your device into DFU mode
 - **Step 3**. Choose Trollstore and follow the instructions
+- **Step 3.1** If you get libusb error, press Ctrl+C on your keyboard, Open icera1n and choose trollstore and try again
