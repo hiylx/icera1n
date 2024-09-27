@@ -2,34 +2,32 @@
 
 Version 3: Eclipse (WIP)
 
-(oh yeah also install usbmuxd, unzip, libimobiledevice and imobiledeviceutils if you use linux)
+## DEPENDENCIES (Only on Linux):
+usbmuxd, unzip, libimobiledevice, git and imobiledeviceutils
 
-Install Steps (needs git cli installed):
+## Install Steps:
 
 <code> git clone https://github.com/hiylx/icera1n --recursive </code>
 
-To run:
+## To run:
 
-cd into the directory where icera1n is installed
+<code> cd </code> into the directory where icera1n is installed
 
 then run <code>sudo ./icera1n.sh</code>
 
-
-User-friendly wrapper for palera1n, futurerestore, entering pwndfu mode and activating devices which were futurerestore'd to iOS 15 on iOS 16 SEP / Baseband
-Works on Linux and Mac (I don't know if it works on apple sillicon)
-
-This tool automatically installs palera1n and provides you with a
-menu to jailbreak your palera1n compatible device. It also comes
-with futurerestore and tools to enter PwnDFU mode.
-
-It makes it easy to do these things with an easily navigatable menu:
-
-Jailbreak iPhone with Palera1n
-Enter PwnDFU mode
-Use Futurerestore
-Activate devices restored to iOS 15 on iOS 16 SEP
-
 Check out [Getting Started](https://github.com/hiylx/icera1n/blob/main/Guides/getstarted.md)
 
-Note for Linux users: Manually stop usbmuxd if your linux distro does not have systemd / systemctl. You do not have to start usbmuxd as the script takes care
-Note: Do not use a USB-C to Lightning cable, those do not work very well for this.
+Note: Apple silicon might not work as expected
+Note: USB-C to Lightning cables are kinda wonky so don't use them
+
+What is icera1n?
+
+Icera1n is a wrapper for palera1n, futurerestore, checkm8-nonce-setter, gaster, and backing up and restoring activation files from your iDevice.
+
+What can it do for you?
+
+It can help you jailbreak, down / upgrade using futurerestore, and backup and restore activation files from your iDevice.
+
+Backing up and restoring activation files? What's that for ???
+
+Backing up and restoring activation files is necessary when you downgrade a device using iOS 16 / 17 SEP or in simple terms when you downgrade a device which supports iOS 16 / 17 to iOS 15. If you don't backup and restore your activation files you will be stuck in setup after you finish the restore.
