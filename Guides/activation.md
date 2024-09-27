@@ -27,5 +27,6 @@
  - **Step 2.** Open icera1n if you closed it
  - **Step 3.** Choose Activation
  - **Step 4.** Choose Activate device using backup
+ - **Step 4.1** If you get a lib usb error then press Ctr+C, open icera1n again, choose Activation choose Activate device using backup
  - **Step 5.** Success! If there is any issue create a github issue
  - **Step 5.1** If you want to sideload apps you will have to use the trollstore guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/trollstore.md) or else it won't work. Since your device is not activated in the standard way sideloading apps using safari, sideloadly or altstore won't work so you are forced to use the ramdisk version of trollstore.
