@@ -1,6 +1,6 @@
 # Setting Nonce via dimentio
 
-- **Step 1.** Install your favorite jailbreak. Also remember what you set as the root password
+- **Step 1.** Install your favorite jailbreak using the guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md) (You can skip this if you are already jailbroken)
 - **Step 2.** Add the source "https://repo.1conan.com/" to Sileo
 - **Step 3.** Open your shsh2 blob in a text editor and find Generator, below it will be something like 0x1111111111111111. This is your nonce.
 - **Step 4.** Install NewTerm 3 Beta using Sileo
