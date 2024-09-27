@@ -7,6 +7,7 @@ FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading 
 # Prerequisites
 - iPSW file you want to downgrade to
 - SHSH Blobs for the version of iOS in the iPSW file
+- The version you want to downgrade to is listed as compatible with your device in the [SEP BB Compatibility list](https://docs.google.com/spreadsheets/d/1Mb1UNm6g3yvdQD67M413GYSaJ4uoNhLgpkc7YKi3LBs) (You can ignore this step if you are following my guide on restoring a device supporting iOS 16 / 17 / 18 down to iOS 15)
 
 Now you will have to choose a method to proceed with. I recommend Method 1. as it will almost always work while the other 2 methods are unsupported on some devices
 
