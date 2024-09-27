@@ -8,13 +8,7 @@ FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading 
 - iPSW file you want to downgrade to
 - SHSH Blobs for the version of iOS in the iPSW file
 
-# DO THIS FIRST
-
-- **Step 1.** Open icera1n
-- **Step 2.** Connect your device to your comptuer
-- **Step 3.** Choose futurerestore
-
-Now you will have to set the nonce on your device.
+Now you will have to choose a method to proceed with. I recommend Method 1. as it will almost always work while the other 2 methods are unsupported on some devices
 
  # Method 1. Dimentio (Recommended)
  - **Step 1.** Follow [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
