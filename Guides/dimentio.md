@@ -5,5 +5,5 @@
 - **Step 3.** Install NewTerm 3 using Sileo
 - **Step 4.** Install dimentio using Sileo
 - **Step 5.** Open NewTerm 3 on your device (if asked select 0)
-- **Step 6.** Run <code>sudo su root -c 'dimentio [nonce goes here without the brackets]' </code> and enter the root password
+- **Step 6.** Run <code>sudo su root -c 'dimentio [nonce goes here without the brackets]' </code> and enter the terminal password you entered when jailbreaking your device
 - Example if your nonce is 0x1111111111111111 you would run <code> sudo su root -c 'dimentio 0x1111111111111111' </code>
