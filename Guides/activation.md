@@ -1,5 +1,5 @@
 # Futurerestoring devices that support iOS 16 / 17 back down to iOS 15
-# DISCLAIMER
+# DISCLAIMER THIS GUIDE IS INCOMPLETE WAIT 4 DAYS FOR ME TO COMPLETE IT AND TEST IT AND ALL
  - This will ERASE everything on your device
  - Also touch ID will not work
  - And I don't recommend setting a password if you do and something goes wrong it's on you
