@@ -169,7 +169,7 @@ function trololo {
 	#./sshrd.sh $iosver
 	./sshrd.sh $iosver TrollStore Tips 
 	./sshrd.sh $iosver boot
-	echo Your device should automatically reboot. Open Tips app and choose Install Trollstore
+	echo Your device should automatically reboot in around a minute. Open Tips app and choose Install Trollstore
 	read
 	cd "$currentdirwd/"
 	mainmenu
