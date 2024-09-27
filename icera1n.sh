@@ -14,14 +14,14 @@ find . -name "*.sh" -exec chmod +x {} \;
  }
  function restoreiosnormal {
  	clear
- 	echo Either paste the path to the shsh-blob or drag and drop it: 
+ 	echo Either paste the path to the shsh-blob or drag and drop it also remove the quotes: 
  	read pathsh22
- 	echo Either paste the path to the ipsw or drag and drop it:
+ 	echo Either paste the path to the ipsw or drag and drop it also remove the quotes:
  	read ipswpath
  	echo Does your device have a baseband? Only devices which have a SIM slot have baseband
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
- 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu ;;
+ 	 			0) echo Running futurerestore -t $pathsh22 --latest-sep --latest-baseband $ipswpath && cd "$currentdirwd/""$unameOut"/ && ./futurerestore -t "$pathsh22" --latest-sep --latest-baseband "$ipswpath" && cd "$currentdirwd/" && echo Done! Press enter to continue && read && mainmenu ;;
+ 	 		    1) echo Running futurerestore -t $pathsh22 --latest-sep --no-baseband $ipswpath && cd "$currentdirwd/""$unameOut"/ && ./futurerestore -t "$pathsh22" --latest-sep --no-baseband "$ipswpath" && cd "$currentdirwd/" && echo Done! Press enter to continue && read && mainmenu ;;
  	esac
  }
  function restoreiosgaster {
@@ -32,8 +32,8 @@ find . -name "*.sh" -exec chmod +x {} \;
  	read ipswpath
  	echo Does your device have a baseband? Only devices which have a SIM slot have baseband
  	case `select_opt "Yes" "No"` in
- 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
- 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && "$currentdirwd/""$unameOut"/futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && echo Done! Press enter to continue && read && mainmenu;;
+ 	 			0) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && cd "$currentdirwd/""$unameOut"/ && ./futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --latest-baseband $ipswpath && cd "$currentdirwd/" && echo Done! Press enter to continue && read && mainmenu;;
+ 	 		    1) echo Running futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && cd "$currentdirwd/""$unameOut"/ && ./futurerestore --use-pwndfu --set-nonce -t $pathsh22 --latest-sep --no-baseband $ipswpath && cd "$currentdirwd/" && echo Done! Press enter to continue && read && mainmenu;;
  	esac
  } 
  function restoreios {
