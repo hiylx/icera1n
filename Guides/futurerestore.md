@@ -4,18 +4,17 @@
 # WARNING WARNING WARNING!
 FOLLOWING THIS GUIDE WILL ERASE THE DATA ON YOUR DEVICE. If you are downgrading a device which supports iOS 16 / 17 to 15 follow [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/activation.md) or it won't work unless you are coming here after following that guide. If your device supports iOS 18 or iPhone X you can't downgrade it as of now.
 
-- # Prerequisites
+# Prerequisites
 - iPSW file you want to downgrade to
 - SHSH Blobs for the version of iOS in the iPSW file
 
-## Prerequisite steps
+# Prerequisite Steps
 
 - **Step 1.** Open icera1n
 - **Step 2.** Connect your device to your comptuer
 - **Step 3.** Choose futurerestore
 
 Now you will have to set the nonce on your device.
-
 
  # Method 1. Dimentio (Recommended)
  - **Step 1.** Boot your device into normal mode and try [this](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
