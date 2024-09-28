@@ -1,4 +1,4 @@
-# Futurerestoring devices that support iOS 16 / 17 / 18 back down to iOS 15
+# Futurerestoring devices that support iOS 16 / 17 / 18 back down to iOS 15 or 14
 # DISCLAIMERS (READ BEFORE ATTEMPTING ANYTHING)
  - This will ERASE everything on your device
  - Also touch ID will not work
@@ -8,7 +8,7 @@
  - This guide only works on checkm8 compatible devices. The explicit list is iPad 5, 6 and 7, iPad Pro 12.9" 1st and 2nd generation, iPad Pro 10.5" 1st generation and iPad 9.7" 1st Generation and iPhone 8. DO NOT TRY THIS WITH AN IPHONE X
 # Prerequisites
  - An iDevice on iOS 16 / 17 / 18 that is activated
- - Blobs and iPSW for the iOS 15 version you are downgrading to
+ - Blobs and iPSW for the iOS 15 / 14 version you are downgrading to
 
 # Backing up activation files
  - **Step 1.** Remove all previous jailbreaks
