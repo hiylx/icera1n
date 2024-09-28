@@ -2,6 +2,11 @@
 
 Version 3: Eclipse 
 
+Compatible OS:
+
+- macOS (Tested on 10.15 Catalina)
+- Linux (Tested on debian sid)
+
 ## DEPENDENCIES (Only on Linux):
 usbmuxd, unzip, libimobiledevice, git and imobiledeviceutils
 
