@@ -1,12 +1,14 @@
-# Futurerestoring devices that support iOS 16 / 17 back down to iOS 15
+# Futurerestoring devices that support iOS 16 / 17 / 18 back down to iOS 15
 # DISCLAIMER THIS GUIDE IS INCOMPLETE WAIT 4 DAYS FOR ME TO COMPLETE IT AND TEST IT AND ALL
  - This will ERASE everything on your device
  - Also touch ID will not work
- - And I don't recommend setting a password if you do and something goes wrong it's on you
+ - And I don't recommend setting a password on A11 chip devices if you are planning on using palera1n
  - You can't use this to bypass iCloud lock, like it literally won't work
+ - This guide was only tested on iOS 16 supporting device. It should (hopefully) work on 17 and 18. If you try this on a device supporting iOS 17 or 18 you should be prepared if you need to restore back to the latest version
+ - This guide only works on checkm8 compatible devices. The explicit list is iPad 5, 6 and 7, iPad Pro 12.9" 1st and 2nd generation, iPad Pro 10.5" 1st generation and iPad 9.7" 1st Generation and iPhone 8. DO NOT TRY THIS WITH AN IPHONE X
  - This guide is incomplete like wait 2, 3 days for me to complete it cause I have a life too...
 # Prerequisites
- - An iDevice on iOS 16 / 17 that is activated
+ - An iDevice on iOS 16 / 17 / 18 that is activated
  - Blobs and iPSW for the iOS 15 version you are downgrading to
 
 # Backing up activation files
@@ -19,7 +21,7 @@
  - **Step 6.1.** To find the IP address of your iDevice, go to Settings -> Wi-Fi -> click the (i) icon next to your Wi-Fi network and scroll down until you find IP address
  - **Step 6.2.** If there are any errors, create an issue on github and I will check it out
 
-# Now futurerestore your device to iOS 15 using [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/futurerestore.md)
+# Now futurerestore your device to iOS 15 using [this guide](https://github.com/hiylx/icera1n/blob/main/Guides/futurerestore.md) You can ignore the SEP BB Prerequisite
 
 # Restoring activation files
 
