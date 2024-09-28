@@ -1,12 +1,11 @@
 # Futurerestoring devices that support iOS 16 / 17 / 18 back down to iOS 15
-# DISCLAIMER THIS GUIDE IS INCOMPLETE WAIT 4 DAYS FOR ME TO COMPLETE IT AND TEST IT AND ALL
+# DISCLAIMERS (READ BEFORE ATTEMPTING ANYTHING)
  - This will ERASE everything on your device
  - Also touch ID will not work
  - And I don't recommend setting a password on A11 chip devices if you are planning on using palera1n
  - You can't use this to bypass iCloud lock, like it literally won't work
  - This guide was only tested on iOS 16 supporting device. It should (hopefully) work on 17 and 18. If you try this on a device supporting iOS 17 or 18 you should be prepared if you need to restore back to the latest version
  - This guide only works on checkm8 compatible devices. The explicit list is iPad 5, 6 and 7, iPad Pro 12.9" 1st and 2nd generation, iPad Pro 10.5" 1st generation and iPad 9.7" 1st Generation and iPhone 8. DO NOT TRY THIS WITH AN IPHONE X
- - This guide is incomplete like wait 2, 3 days for me to complete it cause I have a life too...
 # Prerequisites
  - An iDevice on iOS 16 / 17 / 18 that is activated
  - Blobs and iPSW for the iOS 15 version you are downgrading to
@@ -29,7 +28,7 @@
  - **Step 2.** Open icera1n if you closed it
  - **Step 3.** Choose Activation
  - **Step 4.** Choose Activate device using backup
- - **Step 4.1** If you get a lib usb error then press Ctr+C, open icera1n again, choose Activation choose Activate device using backup
+ - **Step 4.1** If you get a lib usb error then press Ctr+C, open icera1n again, choose Activation choose Activate device using backup. If it still does not work then reboot your computer and try open icera1n again, choose Activation choose Activate device using backup
  - **Step 4.2** LINUX USERS, THE SCRIPT WILL TELL YOU TO RUN A COMMAND. OPEN A NEW TERMINAL AND RUN IT. DO NOT MISS THIS STEP
  - **Step 5.** Success! If there is any issue create a github issue
  - **Step 5.1** If you want to sideload apps you will have to use the trollstore guide [here](https://github.com/hiylx/icera1n/blob/main/Guides/trollstore.md) or else it won't work. Since your device is not activated in the standard way sideloading apps using safari, sideloadly or altstore won't work so you are forced to use the ramdisk version of trollstore.
