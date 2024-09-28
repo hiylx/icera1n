@@ -1,6 +1,6 @@
 # icera1n
 
-Version 3: Eclipse (WIP)
+Version 3: Eclipse 
 
 ## DEPENDENCIES (Only on Linux):
 usbmuxd, unzip, libimobiledevice, git and imobiledeviceutils
@@ -32,7 +32,4 @@ It can help you jailbreak, down / upgrade using futurerestore, and backup and re
 
 Backing up and restoring activation files is necessary when you downgrade a device using iOS 16 / 17 SEP or in simple terms when you downgrade a device which supports iOS 16 / 17 to iOS 15. If you don't backup and restore your activation files you will be stuck in setup after you finish the restore.
 
-## ( Coming Soon)
-
- - Guide on backing up and restoring activatin files already exists but I did not test it yet so don't do it.
- - Bypassing iCloud lock
+# Want more features? Create a github issue but no spamming ok.
