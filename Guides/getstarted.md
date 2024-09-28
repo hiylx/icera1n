@@ -15,5 +15,5 @@ You should research about it for your device, not all devices have the same proc
  - [Jailbreaking](https://github.com/hiylx/icera1n/blob/main/Guides/jailbreaking.md)
  - [Futurerestore](https://github.com/hiylx/icera1n/blob/main/Guides/futurerestore.md)
  - [Troll Store](https://github.com/hiylx/icera1n/blob/main/Guides/trollstore.md)
- - [Futurerestoring a device which supports iOS 16 / 17 / 18 to 15](https://github.com/hiylx/icera1n/blob/main/Guides/activation.md)
+ - [Futurerestoring a device which supports iOS 16 / 17 / 18 to iOS 15 / 14](https://github.com/hiylx/icera1n/blob/main/Guides/activation.md)
  - [Setting Nonce via dimentio](https://github.com/hiylx/icera1n/blob/main/Guides/dimentio.md)
