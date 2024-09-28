@@ -38,8 +38,8 @@ find . -name "*.sh" -exec chmod +x {} \;
  } 
  function restoreios {
  	clear
- 	echo If you are restoring normally or with CheckM8 noncesetter choose normal restore.
- 	echo If you are using gaster choose gaster.
+ 	echo If you are restoring normally or with CheckM8 noncesetter or dimentio choose normal restore.
+ 	echo If you are using gaster choose gaster restore.
  	case `select_opt "Normal Restore" "Gaster Restore" "Back" "Help" "Exit Recovery"` in
  			0) restoreiosnormal;;
  		    1) restoreiosgaster;;
@@ -123,7 +123,7 @@ function m8nonce {
 }
 function dfupwn {
 		clear
-		case `select_opt "Method 1: CheckM8 Nonce Setter (Reccomended)" "Method 2: Gaster" "Back" "Help"` in
+		case `select_opt "CheckM8 Nonce Setter" "Gaster" "Back" "Help"` in
 	  	    0) m8nonce;;
 	  	    1) dfugaster;;
 	  	    2) init_restore;;
