@@ -1,7 +1,6 @@
 # Futurerestoring devices that support iOS 16 / 17 / 18 back down to iOS 15 or 14
 # DISCLAIMERS (READ BEFORE ATTEMPTING ANYTHING)
  - This will ERASE everything on your device
- - Also touch ID will not work
  - And I don't recommend setting a password on A11 chip devices if you are planning on using palera1n
  - You can't use this to bypass iCloud lock, like it literally won't work
  - This guide was only tested on iOS 16 supporting device. It should (hopefully) work on 17 and 18. If you try this on a device supporting iOS 17 or 18 you should be prepared if you need to restore back to the latest version
@@ -9,6 +8,12 @@
 # Prerequisites
  - An iDevice on iOS 16 / 17 / 18 that is activated
  - Blobs and iPSW for the iOS 15 / 14 version you are downgrading to
+   
+# What does not work:
+ - Touch ID (The fingerprint gets removed when you reboot)
+ - VPN (Refuses to connect)
+ - Syncing with iTunes, Finder
+ - Accessing photos from the device on computer when it is in normal mode
 
 # Backing up activation files
  - **Step 1.** Remove all previous jailbreaks
