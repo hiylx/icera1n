@@ -8,7 +8,7 @@ Compatible OS:
 - Linux (Tested on debian sid)
 
 ## DEPENDENCIES (Only on Linux):
-usbmuxd, unzip, libimobiledevice, git and imobiledeviceutils
+usbmuxd libimobiledevice unzip git libimobiledevice-utils
 
 ## Install Steps:
 
