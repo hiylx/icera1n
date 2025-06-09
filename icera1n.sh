@@ -117,7 +117,7 @@ function m8nonce {
 	clear
 	echo Connect your device in DFU mode and hit enter
 	case `select_opt "Continue" "Back"` in
-		  	    0) cd "$currentdirwd/""$unameOut"/noncesetter/ && "$currentdirwd/"main.sh && cd "$currentdirwd/" && echo Complete && read && init_restore;;
+		  	    0) cd "$currentdirwd/""$unameOut"/noncesetter/ && ./main.sh && cd "$currentdirwd/" && echo Complete && read && init_restore;;
 		  	    1) dfupwn;;
 	esac
 }
